@@ -1,13 +1,13 @@
-## LUVCHAT ( Chat Web App Like Messager )
+## 🚀 LUVCHAT ( Chat Web App Like Messager )
 
-## Description
+## 💬 Description
 
-LUVCORD is Real Time Chat Project By letruc
+LUVCHAT is Real Time Chat Project By letruc
 
-## Technical Details
+## ✨ Technical Details 
 
-NextJs, AntDesign, Tailwindcss, WebSocket, WebRTC
+NextJs(Typescript), AntDesign, Tailwindcss, WebSocket, WebRTC
 
-## Project History
+## 🕙 Project History
 
 .....

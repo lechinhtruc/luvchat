@@ -2,11 +2,11 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { Avatar } from "antd";
-import ConversationItemProps from "./Types/ConverstationItemProps.type";
+import ConversationItemProps from "./Types/ConversationItemProps.type";
 import { MdMoreHoriz } from "react-icons/md";
 
 const ConversationItem: React.FC<ConversationItemProps> = ({
-  convertstationId,
+  convertsationId,
   avatarSrc,
   username,
   lastMessage,
@@ -14,10 +14,10 @@ const ConversationItem: React.FC<ConversationItemProps> = ({
   seen,
 }) => {
   const { chatId } = useParams();
-  const isFocus = chatId?.startsWith(convertstationId.toString());
+  const isFocus = chatId?.startsWith(convertsationId.toString());
 
   return (
-    <Link href={`/chat/${convertstationId}`}>
+    <Link href={`/chat/${convertsationId}`}>
       <div className="flex items-center group relative">
         <div
           className={`flex gap-x-2 items-center w-full cursor-pointer py-1 px-2 rounded-xl duration-300 hover:bg-opacity-50 hover:bg-[#424242] ${

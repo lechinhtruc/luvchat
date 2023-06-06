@@ -1,12 +1,9 @@
 "use client";
-import BodyConverstation from "@/components/Chat/Converstation/BodyConverstation";
-import ConverstationHeader from "@/components/Chat/Converstation/HeaderConverstation";
+import BodyConverstation from "@/components/Chat/Converstation/BodyConversation";
+import ConverstationHeader from "@/components/Chat/Converstation/HeaderConversation";
 import InputMessage from "@/components/Chat/Converstation/InputMessage";
-import { useParams } from "next/navigation";
 
 export default function ChatBody() {
-  const params = useParams();
-
   return (
     <div className="flex w-full">
       <div className={`flex flex-col w-full`}>

@@ -1,5 +1,5 @@
 type ConversationItemProps = {
-  convertstationId: Number;
+  convertsationId: Number;
   avatarSrc: string;
   username: string;
   lastMessage: string;

@@ -1,9 +1,9 @@
 import ButtonCircle from "@/components/Buttons/ButtonCircle";
-import ConverstationHeaderProps from "./Types/ConverstationHeaderProps.type";
+import ConverstationHeaderProps from "./Types/ConversationHeaderProps.type";
 import { Avatar } from "antd";
 import { MdCall, MdVideocam, MdMoreHoriz } from "react-icons/md";
 
-const ConverstationHeader: React.FC<ConverstationHeaderProps> = ({
+const ConversationHeader: React.FC<ConverstationHeaderProps> = ({
   avatarSrc,
   username,
   lastOnlineTime,
@@ -33,4 +33,4 @@ const ConverstationHeader: React.FC<ConverstationHeaderProps> = ({
   );
 };
 
-export default ConverstationHeader;
+export default ConversationHeader;

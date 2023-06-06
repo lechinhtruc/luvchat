@@ -1,7 +1,7 @@
 import MessageReceived from "./Message/MessageReceived";
 import MessageSend from "./Message/MessageSend";
 
-const BodyConverstation: React.FC = () => {
+const BodyConversation: React.FC = () => {
   return (
     <div className="flex w-full h-full overflow-hidden">
       <div className="overflow-y-scroll w-full">
@@ -62,4 +62,4 @@ const BodyConverstation: React.FC = () => {
   );
 };
 
-export default BodyConverstation;
+export default BodyConversation;

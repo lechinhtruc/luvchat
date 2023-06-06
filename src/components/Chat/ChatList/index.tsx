@@ -1,7 +1,7 @@
 import { MdOutlineBorderColor } from "react-icons/md";
 import ButtonCircle from "@/components/Buttons/ButtonCircle";
 import SearchBox from "./SearchBox";
-import ConverstationList from "./ConversationList";
+import ConversationList from "./ConversationList";
 import Header from "./Header";
 
 const ChatList: React.FC = () => (
@@ -10,7 +10,7 @@ const ChatList: React.FC = () => (
   >
     <Header />
     <SearchBox />
-    <ConverstationList convertstationList={[]} />
+    <ConversationList convertsationList={[]} />
   </div>
 );
 

@@ -1,23 +1,44 @@
+"use client";
+
 import { MdChatBubble, MdPeopleAlt, MdNotifications } from "react-icons/md";
+import { usePathname, useParams } from "next/navigation";
 import Item from "./Item";
 import UserItem from "./UserItem";
 
 const Sidebar: React.FC = () => {
+  const { chatId } = useParams();
+  const ItemList = [
+    {
+      title: "Chat",
+      href: "/chat",
+      icon: <MdChatBubble size={20} />,
+    },
+    {
+      title: "Notification",
+      href: "/notification",
+      icon: <MdNotifications size={20} />,
+    },
+    {
+      title: "People",
+      href: "/people",
+      icon: <MdPeopleAlt size={20} />,
+    },
+  ];
+
   return (
     <div className="flex flex-col w-14 min-w-[56px] h-full border-r-[#424242] border-r-[1px] p-2">
       <nav className="flex-grow">
         <div className="flex flex-col gap-y-1 h-full">
-          <Item title="Chat" href="/chat" icon={<MdChatBubble size={20} />} />
-          <Item
-            title="Notification"
-            href="/notification"
-            icon={<MdNotifications size={20} />}
-          />
-          <Item
-            title="People"
-            href="/people"
-            icon={<MdPeopleAlt size={20} />}
-          />
+          {ItemList.map((item) => {
+            return (
+              <Item
+                key={item.href}
+                title={item.title}
+                href={`${item.href}`}
+                icon={item.icon}
+              />
+            );
+          })}
         </div>
       </nav>
       <div className="flex flex-col gap-y-1">

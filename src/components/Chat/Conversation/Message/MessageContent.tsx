@@ -34,6 +34,7 @@ const MessageContent: React.FC<MessageContentProps> = ({
               src={attachment}
               alt={"Pictures"}
               fill
+              sizes="(max-width: 288px)"
               style={{ objectFit: "cover" }}
             />
           </div>,

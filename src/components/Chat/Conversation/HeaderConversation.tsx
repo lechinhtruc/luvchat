@@ -64,8 +64,8 @@ const ConversationHeader: React.FC<ConverstationHeaderProps> = ({
         <div className="flex flex-col w-full items-center justify-center select-none">
           <Avatar src={avatarSrc} size={80} shape="circle" />
           <p className="text-xl font-semibold text-white">{username}</p>
-          <small className="text-white font-light text-base opacity-60">
-            Đang hoạt động
+          <small className="text-white font-light text-sm opacity-60">
+            Active now
           </small>
           <Space className="mt-4" align="center" size={4}>
             <Space

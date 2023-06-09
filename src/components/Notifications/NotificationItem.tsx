@@ -23,7 +23,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({
         break;
       case 1:
         setContent(
-          <p className="font-light text-sm break-words max-w-[200px] overflow-hidden line-clamp-2">
+          <div className="font-light text-sm break-words max-w-[200px] overflow-hidden line-clamp-2">
             <b className="font-bold">{username}</b>
             <div className="flex gap-x-1 w-full my-1">
               <button className="flex p-1 bg-[#1677ff] rounded-lg w-20 items-center justify-center duration-300 hover:opacity-60 font-semibold">
@@ -33,7 +33,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({
                 Delete
               </button>
             </div>
-          </p>,
+          </div>,
         );
         break;
     }

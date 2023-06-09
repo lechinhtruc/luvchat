@@ -6,9 +6,9 @@ import ItemProps from "./Types/ItemProps.type";
 
 const Item: React.FC<ItemProps> = ({ title, href, icon }) => {
   const pathname = usePathname();
-  const { chatId } = useParams();
   const isFocus = pathname?.startsWith(href);
-  const previousPath = chatId ? `/chat/${chatId}` : "";
+  /* const { chatId } = useParams(); */
+  /* const previousPath = chatId ? `/chat/${chatId}` : ""; */
   return (
     <Tooltip placement="right" title={<p>{title}</p>} arrow={false}>
       <div

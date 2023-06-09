@@ -34,9 +34,6 @@ const SignUp: React.FC = () => (
       </div>
     </div>
     <div className="flex flex-col w-full gap-y-2 duration-300">
-     {/*  <button className="text-violet-950 self-start opacity-80 text-sm whitespace-nowrap rounded-md duration-300 mb-2 hover:opacity-60 dark:text-white">
-        Forgotten your password?
-      </button> */}
       <button className="w-full text-center p-2 rounded-md duration-300 bg-gradient-to-r font-bold from-indigo-500 via-purple-500 to-pink-500 hover:bg-gradient-to-l hover:opacity-60">
         Sign  Up
       </button>

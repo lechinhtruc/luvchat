@@ -9,12 +9,13 @@ type Inputs = {
   username: string;
   password: string;
 };
-
+/* 
+'use server'
 export const metadata = {
   title: "LUV Chat 💬 | Sign In",
   description:
     "LUV Chat 💬 makes it easy and fun to stay close to your favourite people.",
-};
+}; */
 
 const SignIn: React.FC = () => {
   const [isFetching, setIsFetching] = useState(false);
